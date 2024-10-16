@@ -23,6 +23,7 @@ module.exports = configure(function (/* ctx */) {
     boot: [
       
       'axios',
+      'unocss'
     ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
@@ -78,7 +79,8 @@ module.exports = configure(function (/* ctx */) {
           eslint: {
             lintCommand: 'eslint "./**/*.{js,ts,mjs,cjs,vue}"'
           }
-        }, { server: false }]
+        }, { server: false }],
+        ['unocss/vite', {}]
       ]
     },
 
